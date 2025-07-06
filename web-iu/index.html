@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lock Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Smart Lock Admin Panel</h1>
+        <br>
+
+        <div class="card">
+            <input type="text" id="uidInput" placeholder="Enter UID (from card)" />
+
+            <div class="buttons">
+                <button onclick="handleAction(registerUID)">Register UID</button>
+                <button onclick="handleAction(revokeUID)">Revoke UID</button>
+                <button onclick="handleAction(checkUID)">Check UID</button>
+            </div>
+
+            <div id="loader" class="loader hidden"></div>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

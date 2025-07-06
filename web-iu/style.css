@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    text-align: center;
+    margin: 50px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: white;
+    padding: 30px 80px;
+    margin: auto;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #4e8cff;
+    outline: none;
+}
+
+.buttons button {
+    margin: 6px;
+    padding: 10px 22px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #4e8cff;
+    color: white;
+}
+
+.buttons button:hover {
+    background-color: #3a73d7;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    white-space: pre-line;
+}
+
+/* Loader animation */
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #4e8cff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 15px auto;
+    animation: spin 1s linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
