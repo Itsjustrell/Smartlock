@@ -46,9 +46,7 @@ cd Smartlock
 ```javascript
 cd LockChainFoundry
 forge install
-Compile smart contract
 forge build
-
 ```
 
 # Setup node.js
